@@ -12,11 +12,13 @@ export default {
   },
   created() {
     setTimeout(() => {
-      this.nome = "Keuwe";
+      this.nome = "Vitor";
     }, 2000);
   },
   mounted() {
-    this.nome = "Ojo";
+    setTimeout(() => {
+      this.nome = "Keuwe";
+    }, 3000);
   },
 };
 </script>
