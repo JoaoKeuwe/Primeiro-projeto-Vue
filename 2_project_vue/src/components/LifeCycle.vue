@@ -12,6 +12,9 @@ export default {
   },
   created() {
     this.nome = "Keuwe"
+  },
+  mounted() {
+    this.nome = "Ojo"
   }
 
 };
