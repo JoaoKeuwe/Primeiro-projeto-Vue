@@ -11,11 +11,12 @@ export default {
     };
   },
   created() {
-    this.nome = "Keuwe"
+    setTimeout(() => {
+      this.nome = "Keuwe";
+    }, 2000);
   },
   mounted() {
-    this.nome = "Ojo"
-  }
-
+    this.nome = "Ojo";
+  },
 };
 </script>
