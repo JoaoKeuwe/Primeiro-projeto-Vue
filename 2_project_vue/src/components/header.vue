@@ -1,33 +1,33 @@
 <template>
-    <ul>
-        <li ><a href="#">Home</a></li>
-        <li><a href="#">Detalhes</a></li>
-        <li><a href="#">Sair</a></li>
-    </ul>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Detalhes</a></li>
+    <li><a href="#">Sair</a></li>
+  </ul>
 </template>
 
 <script>
 export default {
-    name: 'Header'
-}
+  name: "Header",
+};
 </script>
 
 <style scoped>
-    ul {
-        display: flex;
-        list-style: none
-    }
-    li {
-        margin-right: 10px;
-    }
-    
-    a{
-        color : rgb(123, 26, 26);
-        text-align: none;
-        transition: .5s
-    }
+ul {
+  display: flex;
+  list-style: none;
+}
+li {
+  margin-right: 10px;
+}
 
-    a:hover {
-        color: turquoise
-    }
+a {
+  color: rgb(123, 26, 26);
+  text-align: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: turquoise;
+}
 </style>
