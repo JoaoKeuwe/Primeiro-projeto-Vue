@@ -11,7 +11,7 @@ import Info from "./Info";
 import Form from "./Form.vue";
 
 export default {
-  name: 'Pessoa',
+  name: "Pessoa",
   components: {
     Info,
     Form,
@@ -21,6 +21,5 @@ export default {
       nome: "keuwe",
     };
   },
-  
 };
 </script>

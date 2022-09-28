@@ -8,7 +8,6 @@
       <li>PHP</li>
       <li>REACT</li>
     </ul>
-
   </div>
 </template>
 

@@ -3,7 +3,7 @@
     <FirstComponent />
     <SecondComponent />
     <LifeCycleVue />
-    <Pessoa/>
+    <Pessoa />
   </div>
 </template>
 
@@ -22,6 +22,6 @@ export default {
     SecondComponent,
     LifeCycleVue,
     Pessoa,
-},
+  },
 };
 </script>

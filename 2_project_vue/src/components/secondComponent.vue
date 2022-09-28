@@ -1,9 +1,9 @@
 <template>
-   <p> testando renderização em vue !!!</p>
+  <p>testando renderização em vue !!!</p>
 </template>
 
 <script>
-    export default {
-        name: 'App'
-    }
+export default {
+  name: "App",
+};
 </script>
