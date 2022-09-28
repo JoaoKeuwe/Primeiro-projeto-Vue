@@ -8,6 +8,9 @@
       <li>PHP</li>
       <li>REACT</li>
     </ul>
+    <div>
+      <button @click="show_email">Mostrar Email</button>
+    </div>
 
     <p v-show="mostrar_email">Mande uma mensagem para {{ email }} </p>
     <p>Para acessar meu porrtifólio  <a v-bind:href="meu_link" target="blank"> Basta clicar aqui</a></p>
@@ -26,10 +29,16 @@ export default {
   data() {
     return {
       esta_trabalhando: true,
-      mostrar_email: true,
+      mostrar_email: false,
       email:'joaov2872@hotmail.com',
       meu_link: "https://github.com/JoaoKeuwe"
     }
   },
-};
+  methods: {
+    show_email() {
+      this.mostrar_email = !this.mostrar_email;
+    }
+  }
+}
+
 </script>
