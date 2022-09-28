@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>Estou trabalhando no momento</p>
+    <p v-if="esta_trabalhando">Estou trabalhando no momento</p>
     <p>Estou utilizando essas linguagens</p>
 
     <ul>
@@ -14,6 +14,10 @@
 <script>
 export default {
   name: "Info",
-  data() {},
+  data() {
+    return {
+      esta_trabalhando: false
+    }
+  },
 };
 </script>
