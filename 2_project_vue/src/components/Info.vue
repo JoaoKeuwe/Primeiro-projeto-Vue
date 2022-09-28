@@ -13,7 +13,7 @@
     </div>
 
     <p v-show="mostrar_email">Mande uma mensagem para {{ email }} </p>
-    <p>Para acessar meu porrtifólio  <a v-bind:href="meu_link" target="blank"> Basta clicar aqui</a></p>
+    <p class="github">Para acessar meu porrtifólio  <a v-bind:href="meu_link" target="blank"> Basta clicar aqui</a></p>
     <Picture />
     <p v-if="2<4"> test</p>
   </div>
