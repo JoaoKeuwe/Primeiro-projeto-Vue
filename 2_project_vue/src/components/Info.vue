@@ -9,7 +9,7 @@
       <li>REACT</li>
     </ul>
     <div>
-      <button @click="show_email">Mostrar Email</button>
+      <button @click="show_email">{{ text_button }}</button>
     </div>
 
     <p v-show="mostrar_email">Mande uma mensagem para {{ email }} </p>
@@ -31,12 +31,18 @@ export default {
       esta_trabalhando: true,
       mostrar_email: false,
       email:'joaov2872@hotmail.com',
-      meu_link: "https://github.com/JoaoKeuwe"
+      meu_link: "https://github.com/JoaoKeuwe",
+      text_button: 'Mostrar E-mail'
     }
   },
   methods: {
     show_email() {
-      this.mostrar_email = !this.mostrar_email;
+      this.mostrar_email = !this.mostrar_email
+      if(!this.mostrar_email) {
+        this.text_button = 'Mostrar E-mail'
+      }else {
+        this.text_button = 'Ocutar Email'
+      }
     }
   }
 }
