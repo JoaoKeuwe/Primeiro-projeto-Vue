@@ -3,10 +3,8 @@
     <p v-if="esta_trabalhando">Estou trabalhando no momento</p>
     <p v-else>Estou utilizando essas linguagens</p>
 
-    <ul>
-      <li>MYSQL</li>
-      <li>PHP</li>
-      <li>REACT</li>
+    <ul v-for="technology in backend_tecnologias">
+      <li>{{ technology }}</li>
     </ul>
     <div>
       <button @click="show_email">{{ text_button }}</button>
@@ -32,7 +30,9 @@ export default {
       mostrar_email: false,
       email:'joaov2872@hotmail.com',
       meu_link: "https://github.com/JoaoKeuwe",
-      text_button: 'Mostrar E-mail'
+      text_button: 'Mostrar E-mail',
+      backend_tecnologias: ['Javascript', 'PHP', 'Vue']
+
     }
   },
   methods: {
