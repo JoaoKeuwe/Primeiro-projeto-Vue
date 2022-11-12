@@ -1,5 +1,5 @@
 <template>
-  <form action="">
+  <form action="" @submit="enviarForm($event)">
     <InputText />
     <ButtonSubmit />
   </form>
@@ -13,7 +13,12 @@ export default {
   components: {
     InputText,
     ButtonSubmit,
-
   },
+  methods: {
+    enviarForm(e) {
+      e.preventDefault();
+      console.log("chegou aqui")
+    }
+  }
 };
 </script>
